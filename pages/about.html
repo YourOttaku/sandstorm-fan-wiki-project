@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Зброя та Балістика</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Зброя та балістика</a></li>
+          <li><a href="contacts.html">Ресурси спільноти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Технічні аспекти озброєння</h1>
+
+      <section>
+        <h2>Система балістики</h2>
+        <p>
+          У Sandstorm використовується гібридна система: на близьких дистанціях
+          це <em>hitscan</em>, а на далеких — повноцінна фізична модель польоту
+          кулі з урахуванням гравітації, швидкості, розміру ствола та часу.
+          Банально кажучи - на близьких дистанціях цільтесь в тушу, а на дальніх
+          ведіть приціл на випередження.
+        </p>
+      </section>
+
+      <section>
+        <h2>Технічна специфікація модифікацій зброї</h2>
+        <p>
+          У грі кастомізації зброї відведений окремий аспект, адже від модулів
+          на зброї залежить дуже багато. Нижче в таблиці наведено детально, що
+          на що впливає.
+        </p>
+
+        <table
+          border="1"
+          style="width: 100%; border-collapse: collapse; text-align: left"
+        >
+          <thead>
+            <tr style="background-color: #333; color: white">
+              <th>Назва обвісу</th>
+              <th>Сторона</th>
+              <th>Сумісна зброя</th>
+              <th>Характеристики</th>
+              <th>Ціна (CP)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                colspan="5"
+                style="background-color: #f2f2f2; text-align: center"
+              >
+                <strong>Насадки на ствол</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Suppressor (Глушник)</strong></td>
+              <td>Обидві</td>
+              <td>AKM, MK18, M4A1, Sniper Rifles, SMGs</td>
+              <td>
+                Приховує спалах пострілу, знижує звук на 60%, приховує трасери.
+                Збільшує довжину зброї.
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>Compensator (Компенсатор)</strong></td>
+              <td>Обидві</td>
+              <td>Більшість штурмових та бойових гвинтівок</td>
+              <td>
+                Зменшує горизонтальну віддачу, полегшує контроль автоматичного
+                вогню.
+              </td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>Flash Hider (Полум'ягасник)</strong></td>
+              <td>Обидві</td>
+              <td>Більшість вогнепальної зброї</td>
+              <td>
+                Повністю приховує спалах від пострілу, ускладнюючи візуальне
+                виявлення стрільця.
+              </td>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <td
+                colspan="5"
+                style="background-color: #f2f2f2; text-align: center"
+              >
+                <strong>Оптичні приціли</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>1x Holographic / Red Dot</strong></td>
+              <td>Security</td>
+              <td>Гвинтівки, ПП, Кулемети</td>
+              <td>Чисте поле зору без збільшення. Швидке прицілювання.</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>1x Kobra / OKP-7</strong></td>
+              <td>Insurgents</td>
+              <td>АК-серія, ПП повстанців</td>
+              <td>
+                Радянські коліматорні приціли. OKP-7 має дуже тонку рамку, що не
+                закриває огляд.
+              </td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>1.5x PK-AS</strong></td>
+              <td>Insurgents</td>
+              <td>Більшість зброї повстанців</td>
+              <td>
+                Легке збільшення, відмінно підходить для середніх дистанцій.
+              </td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>2x-1x Holographic / Red Dot</strong></td>
+              <td>Security</td>
+              <td>Штурмові та бойові гвинтівки</td>
+              <td>
+                Гібридний приціл. Дозволяє перемикатися між 1x (ближній бій) та
+                2x (середні дистанції) за допомогою відкидного магніфера.
+              </td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>4x SU230 / 4x M150 RCO</strong></td>
+              <td>Security</td>
+              <td>M4A1, M16A4, LMGs, Снайперські гвинтівки</td>
+              <td>
+                Приціли високої кратності для дальніх дистанцій. Мають резервну
+                мушку зверху.
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>4x-1x PSO-1</strong></td>
+              <td>Insurgents</td>
+              <td>SVD, AS Val, AK-серія</td>
+              <td>
+                Класична радянська снайперська оптика. Можна перемикатися на
+                механічний приціл під оптикою.
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>7x Sniper Scope</strong></td>
+              <td>Обидві</td>
+              <td>Снайперські гвинтівки (M24, Mosin, M82A1)</td>
+              <td>
+                Максимальне збільшення для снайперів. Сильно обмежує
+                периферійний зір.
+              </td>
+              <td>3</td>
+            </tr>
+
+            <tr>
+              <td
+                colspan="5"
+                style="background-color: #f2f2f2; text-align: center"
+              >
+                <strong>Підствольні модифікації</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Recoil Grip (Рукоятка віддачі)</strong></td>
+              <td>Security</td>
+              <td>Більшість автоматичної зброї</td>
+              <td>
+                Зменшує вертикальну віддачу. Ідеально для агресивного штурму.
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>Aiming Grip (Рукоятка прицілювання)</strong></td>
+              <td>Обидві</td>
+              <td>Штурмові гвинтівки, SMG</td>
+              <td>Прискорює час входження в приціл (ADS) на 25%.</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>Loading Grip (Рукоятка перезарядки)</strong></td>
+              <td>Обидві</td>
+              <td>
+                Дробовики, гвинтівки з поздовжньо-ковзним затвором (Mosin, M24)
+              </td>
+              <td>Прискорює анімацію перезаряджання та досилання патрона.</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>Bipod (Сошки)</strong></td>
+              <td>Обидві</td>
+              <td>LMGs, Снайперські гвинтівки, Бойові гвинтівки</td>
+              <td>
+                Практично нівелює віддачу та розгойдування при стрільбі лежачи
+                або з укриття.
+              </td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>Explosive Launcher (M203 / GP-25)</strong></td>
+              <td>Обидві (клас Demolitions)</td>
+              <td>M4A1, M16A4, AKM, AK-74</td>
+              <td>
+                Підствольний гранатомет (осколковий). Ефективний для зачистки
+                кімнат.
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>Smoke Launcher</strong></td>
+              <td>Обидві (клас Observer/Commander/Rifleman)</td>
+              <td>Більшість штурмових гвинтівок</td>
+              <td>
+                Підствольний гранатомет з димовими гранатами для маскування
+                пересування.
+              </td>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <td
+                colspan="5"
+                style="background-color: #f2f2f2; text-align: center"
+              >
+                <strong>Магазини та додаткове обладнання</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Extended Magazine (Збільшений магазин)</strong></td>
+              <td>Обидві</td>
+              <td>SMG, Пістолети, деякі бойові гвинтівки (FAL, G3A3)</td>
+              <td>
+                Додає від 7 до 15 додаткових набоїв залежно від зброї. Збільшує
+                вагу.
+              </td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><strong>Drum Magazine (Барабанний магазин)</strong></td>
+              <td>Insurgents</td>
+              <td>AKM, AK-74, Alpha AK, AS Val</td>
+              <td>
+                Збільшує місткість до 75 набоїв. Значно збільшує вагу та час
+                прицілювання.
+              </td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><strong>Laser Sight (Лазерний цілевказівник)</strong></td>
+              <td>Обидві</td>
+              <td>Пістолети, SMG, Дробовики, Гвинтівки</td>
+              <td>
+                Покращує точність стрільби від стегна. Промінь добре видно як
+                союзникам, так і ворогам.
+              </td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>Flashlight (Ліхтарик)</strong></td>
+              <td>Обидві</td>
+              <td>Вся вогнепальна зброя</td>
+              <td>
+                Освітлює темні приміщення. Може засліпити ворога в ближньому бою
+                (особливо з ПНБ).
+              </td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>Tracer Rounds (Трасуючі набої)</strong></td>
+              <td>Обидві</td>
+              <td>Автоматична зброя</td>
+              <td>
+                Кожен третій або п'ятий патрон світиться в польоті. Допомагає
+                коригувати вогонь.
+              </td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Повний арсенал зброї</h2>
+        <table border="1">
+          <tr>
+            <th>Назва</th>
+            <th>Калібр</th>
+            <th>Пробивна здатність</th>
+            <th>Швидкострільність</th>
+            <th>Швидкість польоту кулі</th>
+            <th>Вертикальна віддача</th>
+            <th>Горизонтальна віддача</th>
+          </tr>
+
+          <tr>
+            <th
+              colspan="7"
+              style="background-color: #f2f2f2; text-align: center"
+            >
+              Штурмові гвинтівки та Карабіни
+            </th>
+          </tr>
+          <tr>
+            <td>MK18 CQBR</td>
+            <td>5.56x45mm</td>
+            <td>275 pp</td>
+            <td>741rpm</td>
+            <td>780m/s</td>
+            <td>22</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>M4A1</td>
+            <td>5.56x45mm</td>
+            <td>291 pp</td>
+            <td>741rpm</td>
+            <td>910m/s</td>
+            <td>24</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>M16A4</td>
+            <td>5.56x45mm</td>
+            <td>311 pp</td>
+            <td>800rpm</td>
+            <td>930m/s</td>
+            <td>23</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>G36K</td>
+            <td>5.56x45mm</td>
+            <td>291 pp</td>
+            <td>741rpm</td>
+            <td>850m/s</td>
+            <td>25</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>L85A2</td>
+            <td>5.56x45mm</td>
+            <td>291 pp</td>
+            <td>652rpm</td>
+            <td>900m/s</td>
+            <td>23</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>AUG A3</td>
+            <td>5.56x45mm</td>
+            <td>311 pp</td>
+            <td>600rpm</td>
+            <td>970m/s</td>
+            <td>21</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>VHS-2</td>
+            <td>5.56x45mm</td>
+            <td>311 pp</td>
+            <td>857rpm</td>
+            <td>910m/s</td>
+            <td>26</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>FAMAS F1</td>
+            <td>5.56x45mm</td>
+            <td>326 pp</td>
+            <td>1000rpm</td>
+            <td>930m/s</td>
+            <td>28</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>QBZ-97</td>
+            <td>5.56x45mm</td>
+            <td>311 pp</td>
+            <td>750rpm</td>
+            <td>900m/s</td>
+            <td>24</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>AKM</td>
+            <td>7.62x39mm</td>
+            <td>343 pp</td>
+            <td>600rpm</td>
+            <td>715m/s</td>
+            <td>25</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>AK-74</td>
+            <td>5.45x39mm</td>
+            <td>311 pp</td>
+            <td>652rpm</td>
+            <td>900m/s</td>
+            <td>22</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Alpha AK</td>
+            <td>7.62x39mm</td>
+            <td>343 pp</td>
+            <td>625rpm</td>
+            <td>670m/s</td>
+            <td>26</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>QBZ-03</td>
+            <td>5.8x42mm</td>
+            <td>311 pp</td>
+            <td>750rpm</td>
+            <td>930m/s</td>
+            <td>23</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>AS Val</td>
+            <td>9x39mm</td>
+            <td>600 pp</td>
+            <td>900rpm</td>
+            <td>295m/s</td>
+            <td>28</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Honey Badger</td>
+            <td>.300 Blackout</td>
+            <td>590 pp</td>
+            <td>857rpm</td>
+            <td>259m/s</td>
+            <td>26</td>
+            <td>10</td>
+          </tr>
+
+          <tr>
+            <th
+              colspan="7"
+              style="background-color: #f2f2f2; text-align: center"
+            >
+              Бойові гвинтівки (Battle Rifles)
+            </th>
+          </tr>
+          <tr>
+            <td>FAL</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>698rpm</td>
+            <td>840m/s</td>
+            <td>33</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>G3A3</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>500rpm</td>
+            <td>800m/s</td>
+            <td>31</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>SCAR-H (Mk17)</td>
+            <td>7.62x51mm</td>
+            <td>365 pp</td>
+            <td>600rpm</td>
+            <td>715m/s</td>
+            <td>27</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Tavor 7</td>
+            <td>7.62x51mm</td>
+            <td>405 pp</td>
+            <td>706rpm</td>
+            <td>800m/s</td>
+            <td>30</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>MDR</td>
+            <td>7.62x51mm</td>
+            <td>405 pp</td>
+            <td>652rpm</td>
+            <td>800m/s</td>
+            <td>29</td>
+            <td>18</td>
+          </tr>
+
+          <tr>
+            <th
+              colspan="7"
+              style="background-color: #f2f2f2; text-align: center"
+            >
+              Пістолети-кулемети (SMGs)
+            </th>
+          </tr>
+          <tr>
+            <td>MP5A5</td>
+            <td>9x19mm</td>
+            <td>180 pp</td>
+            <td>800rpm</td>
+            <td>400m/s</td>
+            <td>18</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>MP5K</td>
+            <td>9x19mm</td>
+            <td>150 pp</td>
+            <td>900rpm</td>
+            <td>350m/s</td>
+            <td>19</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Uzi</td>
+            <td>9x19mm</td>
+            <td>180 pp</td>
+            <td>600rpm</td>
+            <td>400m/s</td>
+            <td>15</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Sterling</td>
+            <td>9x19mm</td>
+            <td>180 pp</td>
+            <td>550rpm</td>
+            <td>390m/s</td>
+            <td>14</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Grease Gun</td>
+            <td>.45 ACP</td>
+            <td>190 pp</td>
+            <td>450rpm</td>
+            <td>285m/s</td>
+            <td>18</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Vector</td>
+            <td>.45 ACP</td>
+            <td>190 pp</td>
+            <td>1200rpm</td>
+            <td>380m/s</td>
+            <td>22</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>MP7</td>
+            <td>4.6x30mm</td>
+            <td>250 pp</td>
+            <td>952rpm</td>
+            <td>735m/s</td>
+            <td>21</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>P90</td>
+            <td>5.7x28mm</td>
+            <td>260 pp</td>
+            <td>900rpm</td>
+            <td>715m/s</td>
+            <td>20</td>
+            <td>11</td>
+          </tr>
+
+          <tr>
+            <th
+              colspan="7"
+              style="background-color: #f2f2f2; text-align: center"
+            >
+              Кулемети (LMGs)
+            </th>
+          </tr>
+          <tr>
+            <td>M249</td>
+            <td>5.56x45mm</td>
+            <td>311 pp</td>
+            <td>800rpm</td>
+            <td>915m/s</td>
+            <td>26</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>PKM</td>
+            <td>7.62x54mmR</td>
+            <td>426 pp</td>
+            <td>652rpm</td>
+            <td>825m/s</td>
+            <td>34</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>MG3</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>1000rpm</td>
+            <td>820m/s</td>
+            <td>38</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>M60</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>550rpm</td>
+            <td>853m/s</td>
+            <td>31</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Galil SAR</td>
+            <td>5.56x45mm</td>
+            <td>311 pp</td>
+            <td>698rpm</td>
+            <td>900m/s</td>
+            <td>25</td>
+            <td>14</td>
+          </tr>
+
+          <tr>
+            <th
+              colspan="7"
+              style="background-color: #f2f2f2; text-align: center"
+            >
+              Снайперські та Марксманські гвинтівки
+            </th>
+          </tr>
+          <tr>
+            <td>M24</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>45rpm</td>
+            <td>853m/s</td>
+            <td>40</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Mosin-Nagant</td>
+            <td>7.62x54mmR</td>
+            <td>426 pp</td>
+            <td>40rpm</td>
+            <td>860m/s</td>
+            <td>42</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>SVD</td>
+            <td>7.62x54mmR</td>
+            <td>426 pp</td>
+            <td>300rpm</td>
+            <td>830m/s</td>
+            <td>35</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Mk 14 EBR</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>706rpm</td>
+            <td>853m/s</td>
+            <td>34</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>M110 SASS</td>
+            <td>7.62x51mm</td>
+            <td>410 pp</td>
+            <td>300rpm</td>
+            <td>783m/s</td>
+            <td>32</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>M1 Garand</td>
+            <td>.30-06</td>
+            <td>450 pp</td>
+            <td>300rpm</td>
+            <td>853m/s</td>
+            <td>38</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>M82A1 CQ</td>
+            <td>.50 BMG</td>
+            <td>691 pp</td>
+            <td>32rpm</td>
+            <td>853m/s</td>
+            <td>89</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <td>M99</td>
+            <td>.50 BMG</td>
+            <td>691 pp</td>
+            <td>20rpm</td>
+            <td>853m/s</td>
+            <td>90</td>
+            <td>95</td>
+          </tr>
+
+          <tr>
+            <th
+              colspan="7"
+              style="background-color: #f2f2f2; text-align: center"
+            >
+              Дробовики та Пістолети
+            </th>
+          </tr>
+          <tr>
+            <td>M870</td>
+            <td>12 Gauge</td>
+            <td>100 pp</td>
+            <td>60rpm</td>
+            <td>400m/s</td>
+            <td>75</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>TOZ-194</td>
+            <td>12 Gauge</td>
+            <td>100 pp</td>
+            <td>60rpm</td>
+            <td>400m/s</td>
+            <td>75</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>M9</td>
+            <td>9x19mm</td>
+            <td>180 pp</td>
+            <td>400rpm</td>
+            <td>381m/s</td>
+            <td>16</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Makarov</td>
+            <td>9x18mm</td>
+            <td>150 pp</td>
+            <td>400rpm</td>
+            <td>315m/s</td>
+            <td>14</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>1911</td>
+            <td>.45 ACP</td>
+            <td>190 pp</td>
+            <td>400rpm</td>
+            <td>253m/s</td>
+            <td>20</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Desert Eagle</td>
+            <td>.50 AE</td>
+            <td>500 pp</td>
+            <td>200rpm</td>
+            <td>470m/s</td>
+            <td>55</td>
+            <td>20</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Sandstorm Fan Wiki Project</p>
+    </footer>
+  </body>
+</html>
