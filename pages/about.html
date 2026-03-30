@@ -1,24 +1,28 @@
-<!DOCTYPE html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Зброя та Балістика</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header>
+      <h1>Технічні аспекти озброєння</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Головна</a></li>
           <li><a href="about.html">Зброя та балістика</a></li>
-          <li><a href="contacts.html">Ресурси спільноти</a></li>
+          <li><a href="contacts.html">Контакти та спільнота</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="events.html">Події</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>Технічні аспекти озброєння</h1>
-
+    <div class="wrapper">
+      <main>
       <section>
+        <article>
         <h2>Система балістики</h2>
         <p>
           У Sandstorm використовується гібридна система: на близьких дистанціях
@@ -27,10 +31,11 @@
           Банально кажучи - на близьких дистанціях цільтесь в тушу, а на дальніх
           ведіть приціл на випередження.
         </p>
+      </article>
       </section>
 
       <section>
-        <h2>Технічна специфікація модифікацій зброї</h2>
+        <h3>Технічна специфікація модифікацій зброї</h3>
         <p>
           У грі кастомізації зброї відведений окремий аспект, адже від модулів
           на зброї залежить дуже багато. Нижче в таблиці наведено детально, що
@@ -782,8 +787,19 @@
         </table>
       </section>
     </main>
+    <section style="margin-top: 40px;">
+      <h2>Додаткова технічна інформація</h2>
+      <p><mark>Важливе зауваження:</mark> Швидкість польоту кулі впливає на те, наскільки сильно потрібно брати випередження при стрільбі по рухомих цілях.</p>
+      <details>
+        <summary>Як розрахувати або змінити балістику?</summary>
+        <p>В консолі сервера можна змінити множник шкоди (змінна <var>DamageMultiplier</var>):</p>
+        <pre><code>[/Script/Insurgency.INSGameMode]
+DamageMultiplier=1.5
+bEnableBulletDrop=True</code></pre>
+      </details>
+    </section>
     <footer>
-      <p>&copy; 2026 Sandstorm Fan Wiki Project</p>
+      <p>&copy; 2026 Sandstorm Fan Wiki Project <mark>Неофіційний фанатський ресурс</mark></p>
     </footer>
   </body>
 </html>

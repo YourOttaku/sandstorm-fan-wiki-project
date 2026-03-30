@@ -1,3 +1,155 @@
-h1 {
-  text-decoration: underline;
+/* ================================== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ecef; /* Світло-сірий фон сторінки */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ================= header/nav ================= */
+header {
+  background-color: #212529;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 4px solid #ffc107;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffc107;
+} /* <--- ОСЬ ЦЮ ДУЖКУ БУЛО ПРОПУЩЕНО */
+
+/* ================= mesh ================= */
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+main {
+  flex: 3;
+  background-color: white; /* <--- Прибрав зайвий слеш */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+/* ================= sematic tags ================= */
+/* таблиці(2 сторінка) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+th,
+td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #343a40;
+  color: white;
+}
+
+/* медіа та код */
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+figcaption {
+  font-size: 0.85em;
+  color: #6c757d;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+pre {
+  background-color: #2b2b2b;
+  color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+mark {
+  background-color: #ffc107;
+  color: #000;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+/* форми для контактів */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+/* ================= footer ================= */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }

@@ -2,54 +2,92 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <title>Зв'язок та ресурси</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header>
+      <h1>Контакти</h1>
       <nav>
         <ul>
           <li><a href="../index.html">Головна</a></li>
           <li><a href="about.html">Зброя та балістика</a></li>
-          <li><a href="contacts.html">Ресурси спільноти</a></li>
+          <li><a href="contacts.html">Контакти та спільнота</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="events.html">Події</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1>Офіційні ресурси гри</h1>
-      <ul>
-        <li>
-          <a href="https://newworldinteractive.com/" target="_blank"
-            >Сайт розробників (NWI)</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://discord.com/invite/insurgencysandstorm"
-            target="_blank"
-            >Офіційний Discord сервер</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://store.steampowered.com/app/581320/Insurgency_Sandstorm/"
-            target="_blank"
-            >Сторінка в Steam</a
-          >
-        </li>
-      </ul>
-      <h2>Контакти розробника</h2>
-      <ul>
-        <li>
-          <a href="https://t.me/thegodofcum" target="_blank">Telegram</a>
-        </li>
-        <li>Discord(тут колись буде посилання на діскорд сервер)</li>
-      </ul>
-    </main>
+    <div class="wrapper">
+      <main>
+        <section>
+          <h2>Офіційні ресурси гри</h2>
+          <ul>
+            <li>
+              <a href="https://newworldinteractive.com/" target="_blank"
+                >Сайт розробників (NWI)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://discord.com/invite/insurgencysandstorm"
+                target="_blank"
+                >Офіційний Discord сервер</a
+              >
+            </li>
+          </ul>
+        </section>
 
+        <section style="margin-top: 30px">
+          <h2>Контакти розробника</h2>
+          <address>
+            <p>
+              <strong>Telegram:</strong>
+              <a href="https://t.me/thegodofcum" target="_blank"
+                >Написати автору<em>(за спам буду блокувати)</em></a
+              >
+            </p>
+            <p>
+              <strong>Discord:</strong> (тут колись буде посилання на діскорд
+              сервер)
+            </p>
+          </address>
+        </section>
+
+        <section style="margin-top: 30px">
+          <h2>Форма зворотного зв'язку</h2>
+          <form action="#" method="post">
+            <p>
+              <label for="name">Нік у Steam: </label>
+              <input type="text" id="name" name="name" required />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+              <label for="message">Повідомлення:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </p>
+            <p>
+              <button type="submit">Надіслати</button>
+            </p>
+          </form>
+        </section>
+      </main>
+    </div>
     <footer>
-        <p>&copy; 2026 Sandstorm Fan Wiki Project</p>
-      </footer>
+      <p>
+        &copy; 2026 Sandstorm Fan Wiki Project
+        <mark>Неофіційний фанатський ресурс</mark>
+      </p>
     </footer>
   </body>
 </html>
