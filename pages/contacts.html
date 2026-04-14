@@ -57,29 +57,136 @@
           </address>
         </section>
 
-        <section style="margin-top: 30px">
-          <h2>Форма зворотного зв'язку</h2>
-          <form action="#" method="post">
-            <p>
-              <label for="name">Нік у Steam: </label>
-              <input type="text" id="name" name="name" required />
-            </p>
-            <p>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </p>
-            <p>
-              <label for="message">Повідомлення:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
+        <section>
+          <h2>Заявка на модерацію</h2>
+          <p>
+            Цей розділ буде відкритий допоки не буде набрана достатня кількість
+            модерів. Після подати заявки буде неможливо.
+            <strong>Обов'язковою</strong> рисою при відборі буде наявність
+            знання англійської не нижче рівня B2, для цього є окреме поле де
+            можна лишити свій сертифікат проходження курсів англійської мови
+          </p>
+
+          <form
+            action="/apply-moderator"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <div class="form-group">
+              <label for="mod_name" class="form-label">Username:</label>
+              <input
+                type="text"
+                id="mod_name"
+                name="mod_name"
+                class="form-control"
                 required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mod_email" class="form-label">Email:</label>
+              <input
+                type="email"
+                id="mod_email"
+                name="mod_email"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="steam_url" class="form-label"
+                >Посилання на Steam (URL):</label
+              >
+              <input
+                type="url"
+                id="steam_url"
+                name="steam_url"
+                class="form-control"
+                placeholder="https://steamcommunity.com/id/..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mod_role" class="form-label">Розділ модерації:</label>
+              <select
+                id="mod_role"
+                name="mod_role"
+                class="form-control"
+                required
+              >
+                <option value="">-- Оберіть розділ --</option>
+                <option value="blog">Блог</option>
+                <option value="events">Події</option>
+                <option value="community">Форум та коментарі</option>
+              </select>
+            </div>
+
+            <fieldset>
+              <legend>Вік:</legend>
+              <input
+                type="radio"
+                id="age_1"
+                name="age_group"
+                value="under_18"
+                required
+              />
+              <label for="age_1">Менше 18 років</label><br />
+              <input type="radio" id="age_2" name="age_group" value="over_18" />
+              <label for="age_2">18 років або більше</label>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="resume" class="form-label" style="color: #d32f2f"
+                >Сертифікат проходження курсів англійської мови (.pdf,
+                .doc):</label
+              >
+              <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf, .doc, .docx"
+                style="display: block; margin-top: 5px"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="experience" class="form-label"
+                >Попередній досвід модерації ресурсвів(опціонально):</label
+              >
+              <textarea
+                id="experience"
+                name="experience"
+                class="form-control"
+                rows="4"
               ></textarea>
-            </p>
-            <p>
-              <button type="submit">Надіслати</button>
-            </p>
+            </div>
+
+            <div
+              class="form-group"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <input
+                type="checkbox"
+                id="rules_agree"
+                name="rules_agree"
+                required
+              />
+              <label for="rules_agree" style="font-weight: bold"
+                >Я зобов'язуюсь дотримуватись правил адміністрації сайту, та
+                розумію, що в разі порушень адміністація має право зняти мене з
+                посади та даю згоду на обробку персональних даних, за умови їх
+                неросповсюдження стороннім особам, що не стосуються
+                адміністрації.</label
+              >
+            </div>
+
+            <div class="flex-buttons">
+              <button type="submit">Надіслати заявку</button>
+              <button type="reset" class="btn-reset">Очистити</button>
+            </div>
           </form>
         </section>
       </main>

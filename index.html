@@ -73,22 +73,16 @@
               мод з’явився в Steam.
             </p>
 
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                margin: 15px 0;
-              "
-            >
+            <div class="img-grid">
               <img
                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17700/header.jpg?t=1592437829"
                 alt="Insurgency MIC Cover"
-                style="max-width: 48%; height: auto; border-radius: 5px"
+                class="img-responsive"
               />
               <img
                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17700/0000005309.1920x1080.jpg?t=1592437829"
                 alt="Insurgency MIC Screenshot"
-                style="max-width: 48%; height: auto; border-radius: 5px"
+                class="img-responsive"
               />
             </div>
 
@@ -112,22 +106,16 @@
               мав помірний успіх.
             </p>
 
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                margin: 15px 0;
-              "
-            >
+            <div class="img-grid">
               <img
                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/222880/header.jpg?t=1758742858"
                 alt="Insurgency 2014 Cover"
-                style="max-width: 48%; height: auto; border-radius: 5px"
+                class="img-responsive"
               />
               <img
                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/222880/ss_18218f434fade7ff9dd2f16ac88bc636750b331b.1920x1080.jpg?t=1758742858"
                 alt="Insurgency 2014 Screenshot"
-                style="max-width: 48%; height: auto; border-radius: 5px"
+                class="img-responsive"
               />
             </div>
 
@@ -147,22 +135,16 @@
               щодо майбутніх ігор серії наразі немає.
             </p>
 
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                margin: 15px 0;
-              "
-            >
+            <div class="img-grid">
               <img
                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581320/header_alt_assets_3.jpg?t=1773310965"
                 alt="Insurgency: Sandstorm Cover"
-                style="max-width: 48%; height: auto; border-radius: 5px"
+                class="img-responsive"
               />
               <img
                 src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581320/ss_bbd902e510ef8b24b78d94b16e807c223e39e5e1.1920x1080.jpg?t=1773310965"
                 alt="Insurgency: Sandstorm Screenshot"
-                style="max-width: 48%; height: auto; border-radius: 5px"
+                class="img-responsive"
               />
             </div>
 
@@ -199,6 +181,56 @@
             >
           </li>
         </ul>
+
+        <h3 style="margin-top: 30px">Спільнота</h3>
+        <a href="pages/register.html">
+          <button class="btn-full">Реєстрація</button>
+        </a>
+
+        <div class="auth-container">
+          <h4>Маєш акаунт?</h4>
+
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <label for="login_email" class="form-label"
+                >Логін або Email:</label
+              >
+              <input
+                type="text"
+                id="login_email"
+                name="login_email"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="login_pwd" class="form-label">Пароль:</label>
+              <input
+                type="password"
+                id="login_pwd"
+                name="login_password"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div
+              class="form-group"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 0.85em;
+              "
+            >
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember">Запам'ятати мене</label>
+            </div>
+
+            <button type="submit" class="btn-full">Увійти</button>
+          </form>
+        </div>
       </aside>
     </div>
     <footer>

@@ -120,6 +120,9 @@ mark {
 /* форми для контактів */
 input[type="text"],
 input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
 textarea {
   width: 100%;
   padding: 10px;
@@ -152,6 +155,7 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
 }
+
 /* ================= таблиці ================= */
 caption {
   font-size: 1.4em;
@@ -170,4 +174,68 @@ td,
 th[scope="row"] {
   text-align: center;
   vertical-align: middle;
+}
+
+/* pics */
+.img-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.img-responsive {
+  width: 48%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* form classes */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.flex-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-reset {
+  background-color: #6c757d;
+}
+
+.auth-container {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  margin-top: 20px;
+}
+
+.auth-container h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
 }

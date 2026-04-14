@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація | Insurgency Wiki</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Insurgency: Sandstorm Fan Wiki</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Зброя та балістика</a></li>
+          <li><a href="contacts.html">Контакти та спільнота</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="events.html">Події</a></li>
+          <li><a href="schedule.html">База по таймінгам</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <main>
+        <section>
+          <h2>Створення облікового запису</h2>
+
+          <form action="/register" method="POST">
+            <div>
+              <label for="username">Username: </label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="pwd">Пароль (мінімум 8 символів): </label>
+              <input
+                type="password"
+                id="pwd"
+                name="password"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="dob" class="form-label">Дата народження: </label>
+              <input
+                type="date"
+                id="dob"
+                name="dob"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <fieldset>
+              <legend>Стать:</legend>
+              <input
+                type="radio"
+                id="gender_m"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="gender_m">Чоловіча</label>
+              <br />
+              <input type="radio" id="gender_f" name="gender" value="female" />
+              <label for="gender_f">Жіноча</label>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="interest" class="form-label">Роль: </label>
+              <select
+                id="interest"
+                name="interest"
+                class="form-control"
+                required
+              >
+                <option value="">-- Оберіть варіант --</option>
+                <option value="user">Користувач</option>
+                <option value="modder">Модороб</option>
+                <option value="script">Скриптер</option>
+                <option value="content">Контентмейкер</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bio" class="form-label"
+                >Додаткова інформація (за бажанням):
+              </label>
+              <textarea
+                id="bio"
+                name="bio"
+                class="form-control"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div
+              class="form-group"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms" style="font-weight: bold; color: #d32f2f"
+                >Я даю згоду на обробку персональних даних</label
+              >
+            </div>
+
+            <div class="flex-buttons">
+              <button type="submit">Зареєструватися</button>
+              <button type="reset" class="btn-reset">Очистити</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <aside>
+        <h3>Корисні ресурси</h3>
+        <ul>
+          <li>
+            <a href="https://store.steampowered.com/app/581320/" target="_blank"
+              >Купити в Steam</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 Sandstorm Fan Wiki Project
+        <mark>Неофіційний фанатський ресурс</mark>
+      </p>
+    </footer>
+  </body>
+</html>
